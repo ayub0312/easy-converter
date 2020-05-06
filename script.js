@@ -9,7 +9,7 @@ function printInput(){
 }
 
 
-document.getElementById("input").addEventListener("change",printInput);
+document.getElementById("input").addEventListener("input", printInput);
 document.getElementById("go").addEventListener("click", printResult);
 
 document.getElementById("input").onkeyup = function(e){
