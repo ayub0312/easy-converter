@@ -12,10 +12,12 @@ function getMyText() {
 
 function printResult(){
 	result.innerText = "`" + getMyText() + " = " + eval(getMyText()) + "`";
+	MathJax.typeset();
 }
 
 function printInput(){
 	result.innerText = "`"+ getMyText()+"`";
+		MathJax.typeset();
 }
 
 //Event Listeners

@@ -1,7 +1,12 @@
 button{
-	border: 30px;
-	border-color: black;
 	background: red;
 }
-input{
+#mainwrapper{
+	text-align: center;
+}
+#main{
+	display: inline-block;
+}
+#result{
+	text-align: center;
 }

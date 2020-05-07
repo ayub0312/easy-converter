@@ -3,14 +3,25 @@
  <head>
   	<link rel="stylesheet" href="style.css">
   	<title>First webapp</title>
-  	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  	<script>
+	MathJax = {
+	  loader: {load: ['input/asciimath', 'output/chtml', 'ui/menu']},
+	};
+	</script>
+	<script type="text/javascript" id="MathJax-script" async
+	  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js">
+	</script>
 </head>
+
 <body>
-	<input type="text" id="input"></input>
-	<button id ="go">Go</button><br>
+	<div id="mainwrapper">
+		<div id="main">
+			<input type="text" id="input"></input>
+			<button id ="go">Go</button>
+		</div>
+	</div>
+	<br>
 	<p id="result">result appears here</p>
-	<p>`(1+2)/3`</p>
 	<script src="script.js"></script>
 </body>
 </html>
