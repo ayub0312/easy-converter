@@ -1,18 +1,28 @@
+//Defining elements
+
+var input = document.getElementById("input");
+var result = document.getElementById("result");
+var goButton = document.getElementById("go");
+
+//Core functions
+
 function getMyText() {
-	return document.getElementById("input").value;
+	return input.value;
 }
+
 function printResult(){
-	document.getElementById("result").innerText = eval(getMyText());
+	result.innerText = eval(getMyText());
 }
+
 function printInput(){
-	document.getElementById("result").innerText = getMyText();
+	result.innerText = getMyText();
 }
 
+//Event Listeners
+input.addEventListener("input", printInput);
+goButton.addEventListener("click", printResult);
 
-document.getElementById("input").addEventListener("input", printInput);
-document.getElementById("go").addEventListener("click", printResult);
-
-document.getElementById("input").onkeyup = function(e){
+input.onkeyup = function(e){
     if(e.keyCode == 13){
        printResult();
     }
