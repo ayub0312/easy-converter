@@ -11,11 +11,11 @@ function getMyText() {
 }
 
 function printResult(){
-	result.innerText = eval(getMyText());
+	result.innerText = "`" + getMyText() + " = " + eval(getMyText()) + "`";
 }
 
 function printInput(){
-	result.innerText = getMyText();
+	result.innerText = "`"+ getMyText()+"`";
 }
 
 //Event Listeners
