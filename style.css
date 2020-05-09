@@ -1,11 +1,9 @@
 button{
 	background: red;
+	width: 20%;
 }
 #mainwrapper{
 	text-align: center;
-}
-#main{
-
 }
 input{
 	width: 80%;
